@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", sans-serif;
+}
+
+:root {
+  --ui-primary: rgb(40, 83, 255) !important;
+  --ui-bg: rgb(248, 243, 238);
+  --ui-radius: 0
+}
+
+.dark {
+  --ui-primary: rgb(8, 73, 236) !important;
+  --ui-bg: rgb(2, 2, 2);
+}
