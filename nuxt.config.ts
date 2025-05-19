@@ -8,6 +8,10 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
+  hub: {
+    workers: true
+  },
+
   css: ['~/assets/style/main.css'],
 
   modules: [
