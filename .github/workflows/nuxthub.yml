@@ -37,4 +37,4 @@ jobs:
         uses: nuxt-hub/action@v1
         id: deploy
         with:
-          project-key: hr-folio-xpuq
+          project-key: twitch-f5y4
