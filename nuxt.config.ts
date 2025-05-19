@@ -14,6 +14,13 @@ export default defineNuxtConfig({
 
   css: ['~/assets/style/main.css'],
 
+  runtimeConfig: {
+    twitch: {
+      clientId: '',
+      clientSecret: ''
+    }
+  },
+
   modules: [
     '@nuxt/ui',
     '@nuxt/image',

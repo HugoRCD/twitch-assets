@@ -1,5 +1,5 @@
 <template>
   <UApp>
-    Hello twitch
+    <NuxtPage />
   </UApp>
 </template>
