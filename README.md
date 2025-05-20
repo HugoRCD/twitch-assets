@@ -15,37 +15,64 @@
 You might not think of Nuxt when planning your stream visuals, but it offers some incredible advantages:
 
 *   **Full Creative Control:** Leverage the power of Vue components and modern web technologies to create truly unique and interactive assets.
-*   **Dynamic Content:** Easily integrate real-time data, APIs, or even server-side logic with Nitro.
+*   **Dynamic Content:** Easily integrate real-time data, APIs (like the Twitch API I'm already using!), or even server-side logic with Nitro.
 *   **Reactivity:** Vue's reactivity makes for smooth and responsive overlays that can react to stream events.
 *   **Familiar Workflow:** If you're a web developer, you're already in your comfort zone!
 *   **Open Source & Customizable:** This repo serves as a live example. Fork it, learn from it, and adapt it for your own stream!
+*   **Powered by @nuxt_hub & Cloudflare Workers:** Deployed on the edge for optimal performance and enabling real-time features like WebSockets.
 
-## 🚀 What's Inside?
+## 🚀 Current State & Future Vision
 
-This repository showcases how I'm using Nuxt to power various elements of my stream, including (but not limited to):
+This project is actively under development. Here's a glimpse of what's here and what's planned:
 
-*   🖼️ **Stream Screens:** Starting Soon, Be Right Back, Stream Ending overlays.
-*   💬 **Interactive Elements:** (e.g., chat display, follower alerts - if you implement them)
-*   📊 **Dynamic Information:** (e.g., current project, music, social media handles)
-*   🎨 **Custom Styling:** All styled with [Your CSS Solution, e.g., Tailwind CSS].
+**Implemented:**
+*   Integration with the Twitch API (for basic data, more to come!).
+*   Deployment on [@nuxt_hub](https://x.com/nuxt_hub) using Cloudflare Workers.
 
-This is a living project, and I'll be adding more as I develop my stream!
+**Roadmap / To-Do (The exciting stuff I'm building!):**
+*   🖼️ **Customizable Overlays:** Starting Soon, Be Right Back, Stream Ending screens.
+*   💬 **Interactive Elements:** Real-time chat display, follower/subscriber/raid alerts (leveraging WebSockets!).
+*   📊 **Dynamic Information Display:** Current project, music playing, social media handles, sponsor logos.
+*   🎨 **Themeable Design:** Easily switch looks or create your own themes.
+*   🔧 **Easy Configuration Interface:** (Potentially a simple UI to manage asset settings).
+*   🌐 **Optimized Browser Sources:** Ensuring smooth performance in OBS, Streamlabs, etc.
 
-## 🔧 How It Works (High-Level)
+The goal is to showcase a comprehensive suite of Nuxt-powered stream assets!
 
-Each asset or overlay is typically a Nuxt route or component. These are then added as **Browser Sources** in my streaming software (like OBS Studio or Streamlabs). Nuxt handles the rendering, animations, and dynamic updates.
+<details><summary>🛠️ Getting Started (Basic Nuxt Setup)</summary>
 
-The goal is to show that you can build sophisticated and professional-looking stream assets using the tools you already know as a web developer.
+This project is a standard Nuxt application.
+
+1.  Clone the repo:
+    ```bash
+    git clone https://github.com/HugoRCD/twitch-assets.git
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd twitch-assets
+    ```
+3.  Install dependencies (using PNPM):
+    ```bash
+    pnpm install
+    ```
+4.  Configure your Twitch API credentials and other settings in `.env` (create one from `.env.example` if provided).
+5.  Run the Nuxt development server:
+    ```bash
+    pnpm dev
+    ```
+6.  Add the relevant Nuxt routes (e.g., `http://localhost:3000/starting-soon`) as Browser Sources in your streaming software.
+
+</details>
 
 ## 💡 Get Inspired!
 
-Feel free to browse the code, see how things are structured, and get inspired to build your own Nuxt-powered stream assets. You might be surprised by what's possible!
+Feel free to browse the code as it develops, see how things are structured, and get inspired to build your own Nuxt-powered stream assets. You might be surprised by what's possible!
 
 While this project hosts *my* personal assets, the patterns and techniques can be adapted for any stream.
 
 ## 🤝 Contributing & Feedback
 
-This is primarily a showcase of my personal setup, but if you have cool ideas, find bugs in how I've implemented something, or want to share how you've adapted this, feel free to open an issue or discussion!
+This is primarily a showcase of my personal setup and a learning journey in building these assets. However, if you have cool ideas, find bugs, or want to share how you've adapted this, feel free to open an issue or discussion!
 
 And if you find this inspiring, a star ⭐ on the repo is always appreciated!
 
@@ -56,5 +83,5 @@ Distributed under the Apache-2.0 License. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  Happy Streaming! Built with Nuxt 💚
+  Happy Streaming! Built with Nuxt 💚 & Deployed on @nuxt_hub
 </div>
