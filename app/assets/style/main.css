@@ -10,7 +10,6 @@
 :root {
   --ui-primary: rgb(40, 83, 255) !important;
   --ui-bg: rgb(248, 243, 238);
-  --ui-radius: 0
 }
 
 .dark {

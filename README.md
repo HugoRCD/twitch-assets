@@ -55,7 +55,7 @@ This project is a standard Nuxt application.
     ```bash
     pnpm install
     ```
-4.  Configure your Twitch API credentials and other settings in `.env` (create one from `.env.example` if provided).
+4.  Configure your Twitch API credentials and other settings in `.env` (create one from `.env.example` if provided) for the chat you will need to create a special token here (https://twitchtokengenerator.com).
 5.  Run the Nuxt development server:
     ```bash
     pnpm dev
