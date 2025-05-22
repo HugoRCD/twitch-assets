@@ -4,8 +4,8 @@ const { stream } = useStream()
 
 <template>
   <NuxtLayout>
-    <div ref="containerRef" class="flex-1 flex items-center p-18">
-      <div class="flex flex-col gap-2">
+    <div class="flex-1 w-full flex items-center">
+      <div class="ml-12 flex flex-col w-full gap-2">
         <span class="text-2xl text-muted">
           À la prochaine !
         </span>
@@ -14,6 +14,9 @@ const { stream } = useStream()
         </h1>
         <Tags />
       </div>
+      <!-- <div class="flex flex-col items-center justify-center">
+        <Chat class="h-[70%] w-[500px]" />
+      </div> -->
     </div>
   </NuxtLayout>
 </template>

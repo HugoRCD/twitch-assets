@@ -14,12 +14,14 @@ const displayedMessages = computed(() =>
 </script>
 
 <template>
-  <div :class="['flex flex-col gap-1 w-full', props.class]">
-    <ChatMessage
-      v-for="message in displayedMessages"
-      :key="message.timestamp + message.username + message.message"
-      :message
-      :channel-id
-    />
+  <div class="border-l-2 border-t-2 border-b-2 border-default p-2">
+    <div class="flex-1" :class="displayedMessages.length > 0 ? 'mask-t-from-50%' : ''">
+      <ChatMessage
+        v-for="message in displayedMessages"
+        :key="message.timestamp + message.username + message.message"
+        :message
+        :channel-id
+      />
+    </div>
   </div>
 </template> 

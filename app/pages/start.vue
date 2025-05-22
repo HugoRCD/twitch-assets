@@ -4,23 +4,22 @@ const { stream } = useStream()
 
 <template>
   <NuxtLayout>
-    <div class="flex-1 flex items-center p-18">
-      <div class="flex flex-col gap-2">
+    <div class="flex-1 w-full flex items-center">
+      <div class="ml-12 flex flex-col w-full gap-2">
         <span v-if="stream && stream.stream" class="text-2xl text-muted">
           {{ stream.stream.title }}
         </span>
         <span v-else class="text-2xl text-muted">
           Initialisation du stream...
         </span>
-        <span class="text-5xl">
+        <h1 class="text-5xl">
           Le stream va démarrer dans <span class="font-serif italic">quelques secondes</span><span class="text-primary">.</span>
-        </span>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span v-for="tag in tags" :key="tag" class="text-muted border border-default px-2 py-0.5">
-            {{ tag }}
-          </span>
-        </div>
+        </h1>
+        <Tags />
       </div>
+      <!-- <div class="flex flex-col items-center justify-center">
+        <Chat class="w-[500px]" />
+      </div> -->
     </div>
   </NuxtLayout>
 </template>

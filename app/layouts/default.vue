@@ -8,7 +8,7 @@ const { stream } = useStream()
     <div class="pointer-events-none fixed inset-0 z-40 size-full overflow-hidden">
       <div class="noise pointer-events-none absolute inset-[-200%] z-50 size-[400%] bg-[url('/noise.png')] opacity-[4%]" />
     </div>
-    <div class="flex min-h-screen flex-col p-12">
+    <div class="flex h-screen flex-col p-12">
       <div class="relative flex size-full mx-auto flex-1 flex-col gap-3 border-2 border-default">
         <NbViewer :nb-viewers="stream?.stream?.viewer_count" class="absolute top-2 right-2" />
         <slot />
