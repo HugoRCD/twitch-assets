@@ -9,7 +9,7 @@ const { stream } = useStream()
         <span v-if="stream && stream.stream" class="text-2xl text-muted">
           {{ stream.stream.title }}
         </span>
-        <span v-else>
+        <span v-else class="text-2xl text-muted">
           Initialisation du stream...
         </span>
         <span class="text-5xl">
