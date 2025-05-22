@@ -1,19 +1,27 @@
 <script setup lang="ts">
-const { data: stream } = await useFetch('/api/stream')
+const { stream, isLive } = useStream()
 const { messages, isConnected } = useTwitchChat()
-const channelId = computed(() => stream?.user?.id || '')
+const channelId = computed(() => stream.value?.user?.id || '')
 </script>
 
 <template>
   <div class="flex flex-col gap-4 p-4">
     <div class="flex flex-col gap-2">
-      <div class="text-2xl font-bold">
-        {{ stream.user.display_name }}
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold flex flex-col gap-2">
+          <h1 class="text-highlighted">
+            {{ stream?.user?.display_name }}
+          </h1>
+          <p class="text-muted text-sm">
+            {{ stream?.user?.description }}
+          </p>
+        </div>
+        <UBadge
+          :color="isLive ? 'success' : 'neutral'"
+          :label="isLive ? 'LIVE' : 'OFFLINE'"
+        />
       </div>
     </div>
-    <pre class="text-xs">
-        {{ stream }}
-    </pre>
     <div class="chat-container">
       <div v-if="!isConnected" class="text-red-500">
         Disconnected from chat
