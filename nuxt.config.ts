@@ -12,12 +12,19 @@ export default defineNuxtConfig({
     workers: true
   },
 
+  nitro: {
+    experimental: {
+      websocket: true
+    }
+  },
+
   css: ['~/assets/style/main.css'],
 
   runtimeConfig: {
     twitch: {
       clientId: '',
-      clientSecret: ''
+      clientSecret: '',
+      oauthToken: ''
     }
   },
 

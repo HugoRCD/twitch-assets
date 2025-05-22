@@ -17,18 +17,21 @@
     "@iconify-json/lucide": "^1.2.44",
     "@iconify-json/simple-icons": "^1.2.34",
     "@iconify-json/vscode-icons": "^1.2.21",
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/ui": "^3.1.2",
+    "@nuxthub/core": "0.8.27",
     "@shelve/cli": "^4.1.6",
     "@vueuse/nuxt": "13.2.0",
-    "@nuxthub/core": "0.8.27",
-    "@nuxt/ui": "^3.1.2",
-    "@nuxt/image": "^1.10.0",
+    "irc-message": "^3.0.2",
     "motion-plus-vue": "^1.1.5",
     "motion-v": "1.0.2",
     "nuxt": "^3.17.3",
-    "vue": "latest"
+    "vue": "latest",
+    "ws": "^8.18.2"
   },
   "devDependencies": {
-    "@hrcd/eslint-config": "^3.0.3"
+    "@hrcd/eslint-config": "^3.0.3",
+    "@types/ws": "^8.18.1"
   },
   "packageManager": "pnpm@8.6.5+sha1.a074a371066567dcdeb19a1d1bd9a78cf3c9faa3"
 }
