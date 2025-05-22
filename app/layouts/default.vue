@@ -1,22 +1,5 @@
 <script setup lang="ts">
-const socials = [
-  {
-    name: 'hugorcd',
-    icon: 'i-simple-icons-github',
-  },
-  {
-    name: 'hugorcd__',
-    icon: 'i-simple-icons-x',
-  },
-  {
-    name: '@hrcd.fr',
-    icon: 'i-simple-icons-bluesky',
-  },
-  {
-    name: 'hugo.rcd_',
-    icon: 'i-simple-icons-instagram',
-  }
-]
+const { stream } = useStream()
 </script>
 
 <template>
@@ -27,8 +10,9 @@ const socials = [
     </div>
     <div class="flex min-h-screen flex-col p-12">
       <div class="relative flex size-full mx-auto flex-1 flex-col gap-3 border-2 border-default">
+        <NbViewer :nb-viewers="stream?.stream?.viewer_count" class="absolute top-2 right-2" />
         <slot />
-        <div class="flex items-center justify-center gap-2 p-2 absolute bottom-0 w-full">
+        <div class="flex items-center justify-center gap-2 absolute bottom-0 w-full">
           <div v-for="social in socials" :key="social.name" class="flex items-center justify-center gap-2 p-4">
             <UIcon :name="social.icon" class="size-6" />
             <span class="text-lg">

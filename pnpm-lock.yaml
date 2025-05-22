@@ -35,6 +35,9 @@ dependencies:
   irc-message:
     specifier: ^3.0.2
     version: 3.0.2
+  motion-plus:
+    specifier: ^0.1.9
+    version: 0.1.9
   motion-plus-vue:
     specifier: ^1.1.5
     version: 1.1.5(motion-v@1.0.2)(vue@3.5.14)
@@ -5337,6 +5340,25 @@ packages:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: false
 
+  /framer-motion@12.12.1:
+    resolution: {integrity: sha512-PFw4/GCREHI2suK/NlPSUxd+x6Rkp80uQsfCRFSOQNrm5pZif7eGtmG1VaD/UF1fW9tRBy5AaS77StatB3OJDg==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      motion-dom: 12.12.1
+      motion-utils: 12.12.1
+      tslib: 2.8.1
+    dev: false
+
   /framer-motion@12.5.0:
     resolution: {integrity: sha512-buPlioFbH9/W7rDzYh1C09AuZHAk2D1xTA1BlounJ2Rb9aRg84OXexP0GLd+R83v0khURdMX7b5MKnGTaSg5iA==}
     peerDependencies:
@@ -6768,6 +6790,36 @@ packages:
       motion-utils: 12.12.1
     dev: false
 
+  /motion-plus-dom@0.1.7:
+    resolution: {integrity: sha512-VhKHcQCiv+s9y0hjRskV+/UVaHYR5O8zaSou8qRwkEl5RtMyxbgfKs4/uzt6aRDToFW+DiZuxBgsvCd9WWbfXw==}
+    dependencies:
+      motion: 12.12.1
+      motion-dom: 12.12.1
+      motion-utils: 12.12.1
+    transitivePeerDependencies:
+      - '@emotion/is-prop-valid'
+      - react
+      - react-dom
+    dev: false
+
+  /motion-plus-react@0.1.9:
+    resolution: {integrity: sha512-8tMtmGyq4kVatLL2PXO7s3PNmzw/r3V5TqQ51JhPJVaYZKKT8iFSes6jZRZSOt0hBUfqe5mK46fr/MKL5qqd1Q==}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      motion: 12.12.1
+      motion-plus-dom: 0.1.7
+      motion-utils: 12.12.1
+    transitivePeerDependencies:
+      - '@emotion/is-prop-valid'
+    dev: false
+
   /motion-plus-vue@1.1.5(motion-v@1.0.2)(vue@3.5.14):
     resolution: {integrity: sha512-BQLyTN1I16fuCTYPBY5fa0TKu0KQmfxCDonv69FmX9RT40NO3O5q57vu3FNrD8beZrDfr1DoYKpWi5NOhLUojQ==}
     peerDependencies:
@@ -6776,6 +6828,23 @@ packages:
     dependencies:
       motion-v: 1.0.2(vue@3.5.14)
       vue: 3.5.14(typescript@5.8.3)
+    dev: false
+
+  /motion-plus@0.1.9:
+    resolution: {integrity: sha512-mUFOUJy+kd4xIahp4NYbJVKLYYDRG8MlC2DuOESFmFCbnfUyq+wsN3zOVduBvPAbukgBc1Yx9Pnx8lc/0locSg==}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      motion-plus-dom: 0.1.7
+      motion-plus-react: 0.1.9
+    transitivePeerDependencies:
+      - '@emotion/is-prop-valid'
     dev: false
 
   /motion-utils@12.12.1:
@@ -6797,6 +6866,24 @@ packages:
       - '@vue/composition-api'
       - react
       - react-dom
+    dev: false
+
+  /motion@12.12.1:
+    resolution: {integrity: sha512-vN/3p++Ix0lVt9NH0ZqPrAy8QRTkff27t5z3z5+4BJ3cXPxtOia2EBZS4snM+JUTfl7J0JXP/5ERqu9GT/8IgA==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      framer-motion: 12.12.1
+      tslib: 2.8.1
     dev: false
 
   /mrmime@2.0.1:

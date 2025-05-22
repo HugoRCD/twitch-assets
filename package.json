@@ -23,6 +23,7 @@
     "@shelve/cli": "^4.1.6",
     "@vueuse/nuxt": "13.2.0",
     "irc-message": "^3.0.2",
+    "motion-plus": "^0.1.9",
     "motion-plus-vue": "^1.1.5",
     "motion-v": "1.0.2",
     "nuxt": "^3.17.3",

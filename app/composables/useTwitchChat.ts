@@ -1,6 +1,7 @@
 import type { ChatMessage } from '~/types/chat'
 
 export const useTwitchChat = () => {
+  const toast = useToast()
   const messages = useState<ChatMessage[]>('twitch-chat-messages', () => [])
   const isConnected = computed(() => status.value === 'OPEN')
 
@@ -15,6 +16,12 @@ export const useTwitchChat = () => {
     onMessage: (ws, event) => {
       const message = JSON.parse(event.data) as ChatMessage
       console.log(message)
+      if (message.message.includes('fesse')) {
+        toast.add({
+          title: `Fesse de ${message.username}`,
+          description: 'Fesse',
+        })
+      }
       messages.value = [...messages.value, message].slice(-100)
     }
   })

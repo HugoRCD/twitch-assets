@@ -1,13 +1,5 @@
 <script setup lang="ts">
 const { stream } = useStream()
-
-const tags = [
-  'Nuxt',
-  'Vue',
-  'Tailwind',
-  'TypeScript',
-  'Raycast'
-]
 </script>
 
 <template>
@@ -16,6 +8,9 @@ const tags = [
       <div class="flex flex-col gap-2">
         <span v-if="stream && stream.stream" class="text-2xl text-muted">
           {{ stream.stream.title }}
+        </span>
+        <span v-else>
+          Initialisation du stream...
         </span>
         <span class="text-5xl">
           Le stream va démarrer dans <span class="font-serif italic">quelques secondes</span><span class="text-primary">.</span>
