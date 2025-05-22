@@ -4,7 +4,7 @@ export const useTwitchChat = () => {
   const messages = useState<ChatMessage[]>('twitch-chat-messages', () => [])
   const isConnected = computed(() => status.value === 'OPEN')
 
-  const { status, data, send, open, close } = useWebSocket<ChatMessage>('/api/chat', {
+  const { status, send, open, close } = useWebSocket<ChatMessage>('/chat', {
     autoReconnect: {
       retries: 3,
       delay: 5000,

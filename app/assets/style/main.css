@@ -16,3 +16,8 @@
   --ui-primary: rgb(8, 73, 236) !important;
   --ui-bg: rgb(2, 2, 2);
 }
+
+html, body, #__nuxt, #__layout {
+  width: 100%;
+  height: 100%;
+}
