@@ -11,7 +11,7 @@ const emoteParts = computed(() => parseTwitchEmotes(props.message.rawEmotes, pro
 </script>
 
 <template>
-  <div class="flex items-center gap-2 py-0.5">
+  <div class="flex items-start gap-2 py-0.5">
     <span v-for="(version, badge) in message.badges" :key="badge" class="inline-block align-middle">
       <img
         v-if="getBadgeUrl(badge, version)"

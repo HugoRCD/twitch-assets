@@ -4,7 +4,7 @@ import { useRuntimeConfig } from '#imports'
 import type { ChatMessage } from '~/types/chat'
 
 function parseBadges(badgesStr: string | undefined): Record<string, string> {
-  if (!badgesStr) return {}
+  if (!badgesStr && typeof badgesStr !== 'string') return {}
   return badgesStr.split(',').reduce((acc, badge) => {
     const [name, version] = badge.split('/')
     if (name && version) acc[name] = version
