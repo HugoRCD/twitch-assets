@@ -28,16 +28,31 @@ const primaryTech = computed(() => techStack.find(tech => tech.isPrimary))
 const secondaryTechs = computed(() => techStack.filter(tech => !tech.isPrimary))
 
 const glitchTrigger = ref(false)
+const currentTime = ref('')
 
 onMounted(() => {
-  const interval = setInterval(() => {
+  const glitchInterval = setInterval(() => {
     glitchTrigger.value = true
     setTimeout(() => {
       glitchTrigger.value = false
     }, 200)
   }, 8000)
   
-  onUnmounted(() => clearInterval(interval))
+  const updateTime = () => {
+    const now = new Date()
+    currentTime.value = now.toLocaleTimeString('fr-FR', { 
+      hour: '2-digit', 
+      minute: '2-digit'
+    })
+  }
+  
+  updateTime()
+  const timeInterval = setInterval(updateTime, 60000)
+  
+  onUnmounted(() => {
+    clearInterval(glitchInterval)
+    clearInterval(timeInterval)
+  })
 })
 </script>
 
@@ -523,14 +538,68 @@ onMounted(() => {
             ...(glitchTrigger ? { repeat: 2 } : {})
           }"
         >
-          <div class="flex items-center gap-3 mt-6">
-            <div class="w-4 h-[1px] bg-muted" />
-            <Motion
-              class="w-1 h-1 bg-highlighted"
-              :animate="{ scale: [1, 1.5, 1] }"
-              :transition="{ duration: 2, repeat: Infinity }"
-            />
-            <Tags />
+          <div class="flex items-center gap-4 mt-8">
+            <div class="flex items-center gap-4">
+              <Motion
+                class="flex items-center gap-2"
+                :animate="{ opacity: [0.6, 0.9, 0.6] }"
+                :transition="{ duration: 4, repeat: Infinity, ease: 'easeInOut' }"
+              >
+                <div class="flex gap-1">
+                  <Motion
+                    v-for="i in 3"
+                    :key="i"
+                    class="w-1 bg-muted"
+                    :style="{ height: `${4 + i * 2}px` }"
+                    :animate="{ opacity: [0.4, 0.8, 0.4] }"
+                    :transition="{ 
+                      duration: 1.5, 
+                      repeat: Infinity, 
+                      ease: 'easeInOut',
+                      delay: i * 0.2 
+                    }"
+                  />
+                </div>
+                <span class="text-xs font-mono text-muted tracking-wider uppercase">1080P</span>
+              </Motion>
+              
+              <div class="w-6 h-[1px] bg-muted opacity-30" />
+              
+              <Motion
+                v-if="currentTime"
+                class="flex items-center gap-2"
+                :animate="{ opacity: [0.5, 0.8, 0.5] }"
+                :transition="{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1 }"
+              >
+                <div class="w-1 h-1 bg-highlighted rounded-full" />
+                <span class="text-xs font-mono text-muted tracking-wider uppercase">{{ currentTime }}</span>
+              </Motion>
+              <div class="w-6 h-[1px] bg-muted opacity-30" />
+              
+              <Motion
+                class="flex items-center gap-2"
+                :animate="{ opacity: [0.4, 0.7, 0.4] }"
+                :transition="{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 2 }"
+              >
+                <UIcon name="i-heroicons-globe-alt" class="w-3 h-3 text-muted" />
+                <span class="text-xs font-mono text-muted tracking-wider uppercase">CET</span>
+              </Motion>
+              
+              <div class="w-6 h-[1px] bg-muted opacity-30" />
+              
+              <Motion
+                class="flex items-center gap-2"
+                :animate="{ opacity: [0.5, 0.9, 0.5] }"
+                :transition="{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }"
+              >
+                <Motion
+                  class="w-1 h-1 bg-green-400 rounded-full"
+                  :animate="{ scale: [1, 1.2, 1] }"
+                  :transition="{ duration: 2, repeat: Infinity }"
+                />
+                <span class="text-xs font-mono text-muted tracking-wider uppercase">BUILD OK</span>
+              </Motion>
+            </div>
           </div>
         </Motion>
       </div>
