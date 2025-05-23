@@ -56,7 +56,7 @@ onMounted(() => {
         class="absolute top-1/2 right-12 transform -translate-y-1/2"
         :initial="{ opacity: 0, x: 50, filter: 'blur(10px)' }"
         :animate="{ opacity: 1, x: 0, filter: 'blur(0px)' }"
-        :transition="{ duration: 1.5, ease: 'easeOut', delay: 2.5 }"
+        :transition="{ duration: 1.5, ease: 'easeOut', delay: 0.5 }"
       >
         <div class="flex flex-col gap-6">
           <Motion
