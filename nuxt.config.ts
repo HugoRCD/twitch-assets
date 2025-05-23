@@ -33,6 +33,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vueuse/nuxt',
     '@nuxthub/core',
-    'motion-v/nuxt'
+    'motion-v/nuxt',
+    '@nuxtjs/mdc',
   ],
 })
