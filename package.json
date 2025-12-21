@@ -13,27 +13,27 @@
     "deploy": "nuxthub deploy"
   },
   "dependencies": {
-    "@iconify-json/heroicons": "^1.2.2",
-    "@iconify-json/lucide": "^1.2.44",
-    "@iconify-json/simple-icons": "^1.2.34",
-    "@iconify-json/vscode-icons": "^1.2.21",
-    "@nuxt/image": "^1.10.0",
-    "@nuxt/ui": "^3.1.2",
-    "@nuxthub/core": "0.8.27",
-    "@nuxtjs/mdc": "0.17.0",
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/lucide": "^1.2.82",
+    "@iconify-json/simple-icons": "^1.2.63",
+    "@iconify-json/vscode-icons": "^1.2.37",
+    "@nuxt/image": "^1.11.0",
+    "@nuxt/ui": "^3.3.7",
+    "@nuxthub/core": "0.10.3",
+    "@nuxtjs/mdc": "0.19.1",
     "@shelve/cli": "^4.1.6",
-    "@vueuse/nuxt": "13.2.0",
+    "@vueuse/nuxt": "13.9.0",
     "irc-message": "^3.0.2",
     "motion-plus": "^0.1.9",
-    "motion-plus-vue": "^1.1.5",
-    "motion-v": "1.0.2",
-    "nuxt": "^3.17.3",
+    "motion-plus-vue": "^1.5.0",
+    "motion-v": "1.7.4",
+    "nuxt": "^3.20.2",
     "vue": "latest",
-    "ws": "^8.18.2"
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@hrcd/eslint-config": "^3.0.3",
     "@types/ws": "^8.18.1"
   },
-  "packageManager": "pnpm@8.6.5+sha1.a074a371066567dcdeb19a1d1bd9a78cf3c9faa3"
+  "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
 }
