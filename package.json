@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "@iconify-json/heroicons": "^1.2.3",
-    "@iconify-json/lucide": "^1.2.82",
-    "@iconify-json/simple-icons": "^1.2.64",
-    "@iconify-json/vscode-icons": "^1.2.37",
+    "@iconify-json/lucide": "^1.2.84",
+    "@iconify-json/simple-icons": "^1.2.66",
+    "@iconify-json/vscode-icons": "^1.2.38",
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^3.3.7",
     "@nuxthub/core": "0.10.4",
@@ -25,11 +25,11 @@
     "@vueuse/nuxt": "13.9.0",
     "irc-message": "^3.0.2",
     "motion-plus": "^0.1.9",
-    "motion-plus-vue": "^1.5.0",
-    "motion-v": "1.7.5",
+    "motion-plus-vue": "^1.5.1",
+    "motion-v": "1.9.0",
     "nuxt": "^3.20.2",
     "vue": "latest",
-    "ws": "^8.18.3"
+    "ws": "^8.19.0"
   },
   "devDependencies": {
     "@hrcd/eslint-config": "^3.0.3",
