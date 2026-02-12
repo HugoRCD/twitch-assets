@@ -9,14 +9,14 @@ dependencies:
     specifier: ^1.2.3
     version: 1.2.3
   '@iconify-json/lucide':
-    specifier: ^1.2.89
-    version: 1.2.89
+    specifier: ^1.2.90
+    version: 1.2.90
   '@iconify-json/simple-icons':
-    specifier: ^1.2.69
-    version: 1.2.69
+    specifier: ^1.2.70
+    version: 1.2.70
   '@iconify-json/vscode-icons':
-    specifier: ^1.2.40
-    version: 1.2.40
+    specifier: ^1.2.42
+    version: 1.2.42
   '@nuxt/image':
     specifier: ^1.11.0
     version: 1.11.0
@@ -43,10 +43,10 @@ dependencies:
     version: 0.1.9
   motion-plus-vue:
     specifier: ^1.6.0
-    version: 1.6.0(motion-v@1.10.2)(vue@3.5.14)
+    version: 1.6.0(motion-v@1.10.3)(vue@3.5.14)
   motion-v:
-    specifier: 1.10.2
-    version: 1.10.2(@vueuse/core@13.9.0)(vue@3.5.14)
+    specifier: 1.10.3
+    version: 1.10.3(@vueuse/core@13.9.0)(vue@3.5.14)
   nuxt:
     specifier: ^3.21.1
     version: 3.21.1(@vue/compiler-sfc@3.5.27)(eslint@9.27.0)(rolldown@1.0.0-beta.55)(typescript@5.8.3)(vite@7.3.1)
@@ -1425,20 +1425,20 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/lucide@1.2.89:
-    resolution: {integrity: sha512-9rZaJZn8VBls1KZnGaFTnqqZrUkd++XB3vy9WYIMgmHHgLxQMEZXg3V+oJSEeit0kCNr/OfDBmrDwuGl/LZulA==}
+  /@iconify-json/lucide@1.2.90:
+    resolution: {integrity: sha512-dPn1pRhfBa9KR+EVpdyM1Rvw3T36hCKYxd6TxK1ifffiNt0f5yXx8ZVhqnzPH4Vkz87yLMj5xFCXomNrnzd2kQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/simple-icons@1.2.69:
-    resolution: {integrity: sha512-T/rhy5n7pzE0ZOxQVlF68SNPCYYjRBpddjgjrJO5WWVRG8es5BQmvxIE9kKF+t2hhPGvuGQFpXmUyqbOtnxirQ==}
+  /@iconify-json/simple-icons@1.2.70:
+    resolution: {integrity: sha512-CYNRCgN6nBTjN4dNkrBCjHXNR2e4hQihdsZUs/afUNFOWLSYjfihca4EFN05rRvDk4Xoy2n8tym6IxBZmcn+Qg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/vscode-icons@1.2.40:
-    resolution: {integrity: sha512-Q7JIWAxENwmcRg4EGRY+u16gBwrAj6mWeuSmuyuPvNvoTJHh8Ss8qoeDhrFYNgtWqNkzH5hSf4b2T9XLK5MsrA==}
+  /@iconify-json/vscode-icons@1.2.42:
+    resolution: {integrity: sha512-nAZoq0XGDXQtoj74++gxIO2CTmm5H348KbGSyb+d1kRBqm2dvG4q8gGvdfjbm/r1jAyuIbCam1qRqlm0Bi1uTw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
@@ -6570,25 +6570,6 @@ packages:
     resolution: {integrity: sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==}
     dev: false
 
-  /framer-motion@12.23.26:
-    resolution: {integrity: sha512-cPcIhgR42xBn1Uj+PzOyheMtZ73H927+uWPDVhUMqxy8UHt6Okavb6xIz9J/phFUHUj0OncR6UvMfJTXoc/LKA==}
-    peerDependencies:
-      '@emotion/is-prop-valid': '*'
-      react: ^18.0.0 || ^19.0.0
-      react-dom: ^18.0.0 || ^19.0.0
-    peerDependenciesMeta:
-      '@emotion/is-prop-valid':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      motion-dom: 12.23.23
-      motion-utils: 12.23.6
-      tslib: 2.8.1
-    dev: false
-
   /framer-motion@12.26.2:
     resolution: {integrity: sha512-lflOQEdjquUi9sCg5Y1LrsZDlsjrHw7m0T9Yedvnk7Bnhqfkc89/Uha10J3CFhkL+TCZVCRw9eUGyM/lyYhXQA==}
     peerDependencies:
@@ -7295,6 +7276,7 @@ packages:
     resolution: {integrity: sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
+    requiresBuild: true
     dev: false
 
   /is-extglob@2.1.1:
@@ -8378,12 +8360,6 @@ packages:
     resolution: {integrity: sha512-aF7yRQr/Q0O2/4pIXm6PZ5G+jAd7QS4Yu8m+WEeEHGnbo+7mE36CbLSDQiXYV8bVL3NfmdeqPJct0tUlnjVSnA==}
     dev: false
 
-  /motion-dom@12.23.23:
-    resolution: {integrity: sha512-n5yolOs0TQQBRUFImrRfs/+6X4p3Q4n1dUEqt/H58Vx7OW6RF+foWEgmTVDhIWJIMXOuNNL0apKH2S16en9eiA==}
-    dependencies:
-      motion-utils: 12.23.6
-    dev: false
-
   /motion-dom@12.26.2:
     resolution: {integrity: sha512-KLMT1BroY8oKNeliA3JMNJ+nbCIsTKg6hJpDb4jtRAJ7nCKnnpg/LTq/NGqG90Limitz3kdAnAVXecdFVGlWTw==}
     dependencies:
@@ -8394,7 +8370,7 @@ packages:
     resolution: {integrity: sha512-VhKHcQCiv+s9y0hjRskV+/UVaHYR5O8zaSou8qRwkEl5RtMyxbgfKs4/uzt6aRDToFW+DiZuxBgsvCd9WWbfXw==}
     dependencies:
       motion: 12.23.26
-      motion-dom: 12.23.23
+      motion-dom: 12.26.2
       motion-utils: 12.23.6
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
@@ -8432,14 +8408,14 @@ packages:
       - '@emotion/is-prop-valid'
     dev: false
 
-  /motion-plus-vue@1.6.0(motion-v@1.10.2)(vue@3.5.14):
+  /motion-plus-vue@1.6.0(motion-v@1.10.3)(vue@3.5.14):
     resolution: {integrity: sha512-0vqzhXf9EhRlNWbCeOMuMFxiPaS7R/3kgUuaroVAifrYA9K99ZH5qcIzy1bhT+l+mshptdC/p5OtRhklmMjosw==}
     peerDependencies:
       motion-v: ^1.7.4
       vue: '>=3.0.0'
     dependencies:
       motion-plus-dom: 2.0.2
-      motion-v: 1.10.2(@vueuse/core@13.9.0)(vue@3.5.14)
+      motion-v: 1.10.3(@vueuse/core@13.9.0)(vue@3.5.14)
       vue: 3.5.14(typescript@5.8.3)
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
@@ -8472,8 +8448,8 @@ packages:
     resolution: {integrity: sha512-x5TFgkCIP4pPsRLpKoI86jv/q8t8FQOiM/0E8QKBzfMozWHfkKap2gA1hOki+B5g3IsBNpxbUnfOum1+dgvYww==}
     dev: false
 
-  /motion-v@1.10.2(@vueuse/core@13.9.0)(vue@3.5.14):
-    resolution: {integrity: sha512-K+Zus21KKgZP4CBY7CvU/B7UZCV9sZTHG0FgsAfGHlbZi+u8EolmZ2kvJe5zOG0RzCgdiVCobHBt54qch9rweg==}
+  /motion-v@1.10.3(@vueuse/core@13.9.0)(vue@3.5.14):
+    resolution: {integrity: sha512-9Ewo/wwGv7FO3PqYJpllBF/Efc7tbeM1iinVrM73s0RUQrnXHwMZCaRX98u4lu0PQCrZghPPfCsQ14pWKIEbnQ==}
     peerDependencies:
       '@vueuse/core': '>=10.0.0'
       vue: '>=3.0.0'
@@ -8503,7 +8479,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      framer-motion: 12.23.26
+      framer-motion: 12.26.2
       tslib: 2.8.1
     dev: false
 
